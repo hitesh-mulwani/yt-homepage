@@ -21,9 +21,21 @@
   width: 100%;
   border-radius: 50%;
 }
-
 .d-thumbnail{
   margin-bottom: 10px;
+  position: relative;
+}
+.video-time{
+  color: white;
+  background-color: black;
+  position:absolute;
+  right: 5px;
+  bottom: 10px;
+  font-family: Roboto,Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 4px;
+  border-radius: 2px;
 }
 .d-vid-info{
   width: 300px;
