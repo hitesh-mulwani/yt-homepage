@@ -1,0 +1,43 @@
+.shorts-section{
+  margin-bottom: 100px;
+}
+.shorts-dimension{
+  position: relative;
+  height: 320px;
+  width: 180px;
+  margin-left: 16px;
+  border-radius: 10px;
+}
+.cover{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.shorts-layout{
+  display: flex;
+  gap: 10px;
+}
+.yt-shorts-icon{
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.yt-shorts-img{
+  height: 100%;
+}
+.shorts-title{
+  font-family: Roboto,Arial;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 14px;
+  width: 80%;
+  line-height: 20px;
+}
+.shorts-views{
+  font-family: Roboto,Arial;
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
