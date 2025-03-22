@@ -45,6 +45,17 @@
   height: 20px;
   margin-left: 10px; 
 }
+.yt-icon{
+  position: relative;
+}
+.yt-india{
+  position: absolute;
+  font-family: Roboto,Arial;
+  font-size: 10px;
+  top: -6px;
+  right: -14px;
+  color: gray;
+}
 .search-box{
   width: 0;
   height: 25px;
@@ -62,18 +73,49 @@
   font-size: large;
 }
 .search-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: -1px;
   background-color: rgb(240, 240, 240);
   height: 37px;
-  width: 45px;
+  width: 65px;
   margin-right: 10px;
   padding: 2px 10px;
   border-radius: 2px;
   border: 1px ;
   border-style: solid;
   border-color: rgb(192, 192, 192);
+  position: relative;
+}
+.search-icon{
+  height: 60%;
+  width: 60%;
+  object-fit: cover;
+}
+.search-button > div{
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  font-family: Roboto,Arial;
+  color: white;
+  background-color: rgba(96, 96, 96, 0.9);
+  padding: 8px 6px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.search-button:hover >div{
+  opacity: 1;
 }
 .voice-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   border: none;
   height: 39px;
   width: 45px;
@@ -81,7 +123,23 @@
   padding: 2px 10px;
   background-color: rgb(240, 240, 240);
 }
-
+.voice-button > div{
+  position: absolute;
+  font-size: 12px;
+  bottom: -40px;
+  font-family: Roboto,Arial;
+  color: white;
+  background-color: rgba(96, 96, 96, 0.9);
+  padding: 8px 6px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.voice-button:hover >div{
+  opacity: 1;
+}
 .upload-icon,.yt-apps-icon,.bell-icon{
   height: 24px;
 }
@@ -91,6 +149,8 @@
 }
 .notifications{
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .notification-count{
   position: absolute;
@@ -103,4 +163,48 @@
   font-size: 10px;
   padding: 1.5px 5px;
   border-radius: 80px;
+}
+.uc , .ac{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.user{
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+.uc > div , .ac > div , .user > div{
+  position: absolute;
+  font-size: 12px;
+  bottom: -40px;
+  font-family: Roboto,Arial;
+  color: white;
+  background-color: rgba(96, 96, 96, 0.9);
+  padding: 8px 6px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap
+}
+.uc:hover >div , .ac:hover >div, .user:hover >div{
+  opacity: 1;
+}
+.notification-tooltip{
+  position: absolute;
+  font-size: 12px;
+  bottom: -40px;
+  font-family: Roboto,Arial;
+  color: white;
+  background-color: rgba(96, 96, 96, 0.9);
+  padding: 8px 6px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap
+}
+.notifications:hover > .notification-tooltip{
+  opacity: 1;
 }
