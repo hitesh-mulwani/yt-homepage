@@ -1,11 +1,10 @@
 .shorts-section{
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .shorts-dimension{
   position: relative;
   height: 320px;
   width: 180px;
-  margin-left: 16px;
   border-radius: 10px;
 }
 .cover{
@@ -14,9 +13,37 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
 .shorts-layout{
-  display: flex;
-  gap: 10px;
+  height:400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width:900px){
+  .shorts-layout{
+    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+  }
+  .shorts-dimension{
+    height: 300px;
+    width: 160px;
+  }
+}
+@media (max-width:450px){
+  .shorts-layout{
+    height: 1150px;
+    row-gap: 30px;
+    padding-left: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .shorts-dimension{
+    height: 300px;
+    width: 160px;
+  }
+  .shorts-section{
+    margin-bottom: 40px;
+  }
 }
 .yt-shorts-icon{
   height: 30px;
@@ -33,7 +60,7 @@
   margin-bottom: 7px;
   font-weight: 500;
   font-size: 14px;
-  width: 80%;
+  width: 85%;
   line-height: 20px;
 }
 .shorts-views{

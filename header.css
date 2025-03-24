@@ -208,3 +208,13 @@
 .notifications:hover > .notification-tooltip{
   opacity: 1;
 }
+@media (max-width:450px){
+  .voice-button{display: none;}
+  .search-box{display: none;}
+  .mid-section{margin-right: 0px;}
+  .uc , .ac{display: none;}
+  .right-section{
+    width: auto;
+    gap: 15px;
+  }
+}
